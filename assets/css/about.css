@@ -1,0 +1,194 @@
+/**********************************HEADER************************************/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Verdana,Geneva,Tahoma,sans-serif;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: .2s linear;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 1rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem rem rgba(0,0,0,.1)
+}
+header .logo{
+    font-size: 3rem;
+    color: #ff523b;
+    font-weight: bolder;
+}
+header .logo span{
+    color: teal;
+}
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: orange;
+}
+
+header .icons a:hover{
+    color: orange;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+/*----------------media queries-----------------------*/
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px){
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0,100% 0,100% 0;0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 100%;0 100%);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+/**********************************SEARCH bar************************************/
+.boxContainer{
+    margin: auto;
+    position: relative;
+    width: 300px;
+    height: 42px;
+    border: 4px solid #2980b9;
+    padding: 0px 10px;
+    border-radius: 50px;
+  }
+  .elementsContainer{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .search{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #424242;
+    font-weight: 500;
+  }
+  .search:focus{
+    outline: none;
+
+  }
+  .material-icons{
+    font-size: 25;
+    color: #2980b9;
+  }
+/**********************************About us************************************/
+.about{
+	width: 100%;
+	padding: 78px 0px;
+	background-image: linear-gradient(to right top,#051937,#004d7a,#008793,#00bf72,#a8eb12);
+}
+.about img{
+	height: auto;
+	width: 420px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h1{
+	color: white;
+	font-size: 80px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-family: "Times New Roman",Times,serif;
+}
+.about-text h5{
+	color: black;
+	font-size: 25px;
+	text-transform: capitalize;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+	font-family: cursive;
+}
+h5 span{
+	color: orange;
+}
+.about-text p2{
+    color: black;
+    font-size: 38px;
+    font-family: cursive;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: justify;
+    text-justify: inter-word;
+}
+button{
+	background: #f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s;
+}
+button:hover{
+	background: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}

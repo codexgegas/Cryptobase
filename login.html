@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<!--**************************Header******************************-->
+<header>
+  <input type="checkbox" name="" id="toggler">
+  <label for="toggler" class="fa fa-bars"></label>
+  <a href="homepage.html" class="logo">Cryptobase<span>.</span></a>
+  
+
+  <nav class="navbar">
+
+    <a  href="homepage.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="index.php"><i class="fa fa-fw fa-bitcoin"></i> Live Prices</a>
+    <a href="about.html"><i class="fa fa-fw facility-icon"></i> About</a>
+    <a href="contactform.php"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="hotcoins.html"><i class="fa fa-fw fa-bitcoin"></i> Hot Coins</a>
+    <a href="login.php"><i class="fa fa-fw fa-user"></i> Login</a>
+    
+    <div class="dropdown">
+      <button class="Setings"> Setings</button>
+      <div class="dropdown-content">
+        <a href="welcome.php">User Setings</a>
+        <a href="logout.php">LogOut</a>
+        
+      </div>
+    </div>
+    </nav>
+  
+</header>
+<!--**************************login******************************-->
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+       <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+        <div class="text">
+          <span class="text-1">Don't have an account? <br><br> Sign-up now</span>
+          <br><br>
+          <span class="text-2">Let's get connected</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+        <div class="text">
+          <span class="text-1">Already have an account? <br><br> Login now</span>
+          <br><br>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
